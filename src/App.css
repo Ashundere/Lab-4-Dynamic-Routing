@@ -1,0 +1,38 @@
+
+.page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 5px 5px 5px 5px darkslategray;
+}
+
+body{
+    background-color: lightslategray;
+}
+
+.nav-bar{
+  width: 100%;
+  position: absolute;
+  top:0%;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+  background-color: darkslategray;
+}
+
+.nav-bar img{
+  width: 50px;
+  border-radius: 50%;
+}
+
+.nav-bar img:hover{
+  border-style: solid;
+  border-color: blue;
+}

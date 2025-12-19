@@ -11,10 +11,17 @@ export default function NavBar(){
     function handleLogOut(){
         logout()
     }
+    function handleClick(){
+        if(isAuthenticated){
+            navigate("/admin")
+        } else{
+            navigate("/")
+        }
+    }
     return(
 
         <div className="nav-bar">
-            <img src={profileImg} alt="default user profile image"/>
+            <img src={profileImg} alt="default user profile image" onClick={handleClick}/>
             {!isAuthenticated && <button onClick = {() => navigate("/login")}>Log In</button>}
             {isAuthenticated && <button onClick = {handleLogOut}>Log Out</button>}
         </div>

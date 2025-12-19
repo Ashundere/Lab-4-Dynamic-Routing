@@ -22,6 +22,7 @@ const foundPost: Post | undefined = Posts.find(user => user.slug == slug);
   return (
     <div className="page">
     <article className="blog-post">
+        <img src={foundPost.image} alt="an image of a dessert"/>
       <h1>{foundPost.title}</h1>
       <div className="post-content">
         {foundPost.content}
